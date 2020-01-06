@@ -1,2 +1,2 @@
-# Dlight-Login-UI
+# Login-UI
 Simple login UI
