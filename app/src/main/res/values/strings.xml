@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Dlight</string>
     <string name="image">image</string>
+    <string name="enter_your_phone_number">Enter your phone Number</string>
 </resources>
