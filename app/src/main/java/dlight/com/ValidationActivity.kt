@@ -24,22 +24,27 @@ class ValidationActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
 
-            if ((Phone.text.toString() == "+254745623611") && (Pin.text.toString() == "1234"))
-            {
-                val homeActivityIntent = Intent(this, HomeActivity::class.java)
-                startActivity(homeActivityIntent)
+            when {
+                (Phone.text.toString() == "+254745623611") && (Pin.text.toString() == "1234") -> {
+                    val homeActivityIntent = Intent(this, HomeActivity::class.java)
+                    startActivity(homeActivityIntent)
 
-            } else if ((Phone.text.toString() == "+254745623611") && (Pin.text.toString() != "1234")) {
-                Toast.makeText(this, " Wrong PIN ", Toast.LENGTH_SHORT).show()
+                }
+                (Phone.text.toString() == "+254716965216") && (Pin.text.toString() != "1234") -> {
+                    Toast.makeText(this, " Wrong PIN ", Toast.LENGTH_SHORT).show()
 
-            } else if ((Phone.text.toString() == "") || (Pin.text.toString() == "")) {
+                }
+                Phone.text.toString().isEmpty() || Pin.text.toString().isEmpty() -> {
 
-                Toast.makeText(this, " Both Phone Number and PIN are required! ", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, " Wrong details ", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this, " Both Phone Number and PIN are required! ", Toast.LENGTH_SHORT).show()
+                }
+                else -> {
+                    Toast.makeText(this, " Wrong details ", Toast.LENGTH_SHORT).show()
+                }
             }
 
             }
+
             Forgot.setOnClickListener {
                 Toast.makeText(this, " Action not ready ", Toast.LENGTH_SHORT).show()
 
