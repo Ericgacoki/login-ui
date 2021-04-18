@@ -11,26 +11,25 @@
         android:id="@+id/dlightlogo"
         android:layout_width="140dp"
         android:layout_height="174dp"
+        android:contentDescription="@string/image"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032"
-        app:srcCompat="@drawable/dlightlogo"
-        android:contentDescription="@string/image" />
+        app:srcCompat="@drawable/dlightlogo" />
 
     <EditText
         android:id="@+id/Phone"
         android:layout_width="0dp"
-        android:layout_marginHorizontal="20dp"
         android:layout_height="51dp"
-        android:contentDescription="@string/image"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/input_layout"
         android:drawableStart="@drawable/ic_phone"
         android:ems="10"
-        android:hint="   Enter your phone Number  "
+        android:hint="@string/enter_your_phone_number"
         android:inputType="phone"
         android:maxLength="15"
         android:paddingStart="10dp"
@@ -49,7 +48,7 @@
         android:background="@drawable/input_layout"
         android:drawableStart="@drawable/ic_lock"
         android:ems="10"
-        android:hint="   Enter your PIN"
+        android:hint="@string/enter_your_pin"
         android:inputType="numberPassword"
         android:maxLength="8"
         android:paddingStart="10dp"
@@ -69,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="88dp"
         android:background="@drawable/orange_bg"
-        android:text="Login"
+        android:text="@string/login"
         android:textAllCaps="false"
         android:textColor="@color/purewhite"
         android:textSize="15sp"
@@ -84,7 +83,7 @@
         android:layout_width="76dp"
         android:layout_height="27dp"
         android:inputType="none"
-        android:text="Forgot PIN?"
+        android:text="@string/forgot_pin"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -98,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="27dp"
         android:inputType="none"
-        android:text="Report issue"
+        android:text="@string/report_issue"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -112,7 +111,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Powered by d.light Solar"
+        android:text="@string/powered_by_d_light_solar"
 
         android:textAlignment="textStart"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -131,6 +130,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Pin" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
