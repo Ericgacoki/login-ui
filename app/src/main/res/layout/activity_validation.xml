@@ -17,7 +17,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.032"
-        app:srcCompat="@drawable/dlightlogo" />
+        app:srcCompat="@drawable/dlightlogo"
+        android:contentDescription="@string/image" />
 
     <EditText
         android:id="@+id/Phone"
